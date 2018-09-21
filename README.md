@@ -28,8 +28,9 @@ docker run --rm --user=$(id -u) \
            afandiadib/autodock:nouveau adt
 ```
 If permission denied, you need to change ownership of /dev/dri on host for gpu acceleration.
+```
 sudo chown -R $USER /dev/dri
-
+```
 ### AutoDock Tools - nvidia
 
 To run autodock tools:
