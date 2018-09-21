@@ -52,7 +52,7 @@ To run autodock tools:
 
 ### Autodock Vina - nouveau
 
-    docker run -it --rm \
+    docker run --rm \
                    --workdir=\`pwd\` \
                    --volume=\`pwd\`:\`pwd\` \
                    afandiadib/autodock:nouveau vina
