@@ -13,7 +13,7 @@ Example of usage:
 To run autodock tools:
 ```
 docker run --rm --user=$(id -u) \
-           --workdir=\`pwd\` \
+           --workdir=`pwd` \
            --env=DISPLAY \                    
            --volume=/home/$USER:/home/$USER \
            --volume=/media:/media \
@@ -61,6 +61,6 @@ docker run --rm \
 
 To run vina, alias the docker command in .bashrc for convenience:
 ```
-alias vina='docker run --rm --workdir=\`pwd\` --volume=\`pwd\`:\`pwd\` afandiadib/autodock:nouveau vina'
+alias vina='docker run --rm --workdir=`pwd` --volume=`pwd`:`pwd` afandiadib/autodock:nouveau vina'
 ```
 For virtual screening, it is better to run interactively though.
