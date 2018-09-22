@@ -1,14 +1,14 @@
 # AutoDock Container
 
-Tools included in the container are MGL Tools and AutoDock Vina. Two versions are available: NVIDIA and NOUVEAU-supported container. For NVIDIA support, you need to install NVIDIA driver on host and install nvidia-docker2.
+Tools included in the container are MGL Tools and AutoDock Vina. Two versions are available: nvidia and mesa-supported container. For nvidia support, you need to install NVIDIA driver on host and install nvidia-docker2.
 
 To download:
   1. docker pull afandiadib/autodock:nvidia
-  2. docker pull afandiadib/autodock:nouveau
+  2. docker pull afandiadib/autodock:mesa
 
 Example of usage:
 
-### AutoDock Tools - nouveau
+### AutoDock Tools - mesa
 
 To run autodock tools:
 ```
@@ -51,7 +51,7 @@ docker run --rm --user=$(id -u) \
            afandiadib/autodock:nvidia adt
 ```
 
-### Autodock Vina - nouveau
+### Autodock Vina - mesa
 ```
 docker run --rm \
            --workdir=`pwd` \
